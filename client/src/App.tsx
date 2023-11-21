@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>tetet</h1>
+        <h1>Hi!</h1>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
