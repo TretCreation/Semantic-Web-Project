@@ -5,3 +5,9 @@
 **/.config
 **/node_modules
 **/.vs
+
+__pycache__/
+.pytest_cache/
+.git/
+.idea/
+venv/

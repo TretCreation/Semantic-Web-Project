@@ -16,7 +16,7 @@ def get_cities(country_name: str,
     return repo.get_cities(country_name)
 
 
-@router.get('/countries/{country_name}/cities/{city_name}/universities')
+@router.get('/cities/{city_name}/universities')
 def get_universities_by_city(city_name: str,
                              repo: Repository = Depends()):
     return repo.get_universities_by_city(city_name)
