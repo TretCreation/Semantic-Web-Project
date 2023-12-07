@@ -101,9 +101,13 @@ class Repository:
         res = query_res['results']['bindings']
         if len(res) > 0:
             res = res[0]
+            city = res['city']['value']
+            if city.startswith('http'):
+                index = city.rfind('/') + 1
+                city = city[index:]
             uni = {
                 'name': uni_name,
-                'city': res['city']['value'],
+                'city': city,
                 'logo': res['logo']['value'],
             }
             if students := res.get('students'):
